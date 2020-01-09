@@ -23,12 +23,16 @@ body {
 }
 
 section {
-  padding: 1rem;
+  padding: 2rem 1rem;
   max-width: 50em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 div {
-  padding: 1rem 0 2.5rem;
+  padding: 0 0 2rem;
+  display: inline-block;
 }
 
 .coco {
@@ -48,12 +52,16 @@ a {
   padding: .5em .75em;
   text-decoration: none;
   color: #e2e2e2;
-  border-radius: 3px;
+  border-radius: 4px;
+}
+
+a:hover {
+  background-color: #000;
 }
 
 .img-flex {
   display: block;
-  width: 100%
+  width: 100%;
 }
 
 @media only screen and (min-width: 38em) {
@@ -91,11 +99,12 @@ a {
     justify-content: center;
   }
 
+}
+
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
-    line-height: 1.5;
   }
 
   body {
@@ -103,7 +112,9 @@ a {
     align-items: center;
     justify-content: center;
   }
+
   section {
     align-content: center;
   }
+
 }
